@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.gtyga.mupyojung">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!--uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /-->
+
+	<application android:allowBackup="true"
+				 android:label="@string/app_name"
+				 android:icon="@drawable/logo"
+				 android:theme="@android:style/Theme.Black.NoTitleBar" >
+		<activity
+			android:name="com.gtyga.mupyojung.MainActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustResize" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".LaunchActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+	</application>
+
+</manifest>
